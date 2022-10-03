@@ -69,11 +69,9 @@ del Output.txt
 findstr /v /b /c:"FFFFFFFFFFFF" /c:"ffffffffffff" /c:"000000000000" /c:"D3F7D3F7D3F7" /c:"a0a1a2a3a4a5" /c:"A0A1A2A3A4A5"  Output2.txt > Output.txt
 
 del Output2.txt
-echo FFFFFFFFFFFF > OneBig.dic
-echo A0A1A2A3A4A5 >> OneBig.dic
-echo D3F7D3F7D3F7 >> OneBig.dic
-echo 000000000000 >> OneBig.dic
-echo a0a1a2a3a4a5 >> OneBig.dic
-echo ffffffffffff >> OneBig.dic
+echo FFFFFFFFFFFF> OneBig.dic
+echo D3F7D3F7D3F7>> OneBig.dic
+echo 000000000000>> OneBig.dic
+echo ffffffffffff>> OneBig.dic
 type Output.txt >> OneBig.dic
 del output.txt
