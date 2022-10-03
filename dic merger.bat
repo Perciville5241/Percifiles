@@ -1,12 +1,10 @@
-@echo on
+@echo off
 ::  Acknowledgements
 ::  [Github](https://github.com/Perciville5241) | [Twitter](https://twitter.com/Perciville5241) |  [Discord](Perciville#5241) |
 ::  :---: | :---: | :---: | :---: | :---: |
 
 echo Merging all files
 
-@ECHO OFF
-ECHO Creating %1...
 FOR /F "delims=" %%G IN ('DIR /B /a-d "*.dic"') DO (
 ECHO Adding %%G
 ECHO. >> Output.txt
@@ -64,9 +62,18 @@ echo Remove Dupe's and null's
 
 ::Remove Duplicates
 
-sort /C /UNIQUE "Output.txt" /O "OneBig.dic"
+sort /C /UNIQUE "Output.txt" /O "Output2.txt"
 del Output.txt
 
 ::Remove Unwanted
-:: Remove the colons below if you want to remove the Null entries.
-::findstr /v /b /c:"FFFFFFFFFFFF" /c:"ffffffffffff" /c:"000000000000" /c:"a0a1a2a3a4a5" /c:"A0A1A2A3A4A5"  OneBig.dic > OneBig.dic
+findstr /v /b /c:"FFFFFFFFFFFF" /c:"ffffffffffff" /c:"000000000000" /c:"D3F7D3F7D3F7" /c:"a0a1a2a3a4a5" /c:"A0A1A2A3A4A5"  Output2.txt > Output.txt
+
+del Output2.txt
+echo FFFFFFFFFFFF > OneBig.dic
+echo A0A1A2A3A4A5 >> OneBig.dic
+echo D3F7D3F7D3F7 >> OneBig.dic
+echo 000000000000 >> OneBig.dic
+echo a0a1a2a3a4a5 >> OneBig.dic
+echo ffffffffffff >> OneBig.dic
+type Output.txt >> OneBig.dic
+del output.txt
