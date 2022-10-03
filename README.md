@@ -4,3 +4,7 @@ I compiled a list of the most used 4 digit pins - by most used, i mean all 10,00
 I have then added a STRING before the pin
 Followed by an enter and a wait 5000 for 5 second delay 
 Bad USB & Rubber ducky script.
+
+Dic Merger
+is for combining multiple dictionaries.
+Specifically all the dic's created by iCopy device and combining them all into on big hefty file and removing duplicate entries.
