@@ -68,6 +68,7 @@ sort /C /UNIQUE "Output.txt" /O "Merged.txt"
 del Output.txt
 
 ::Remove Unwanted
-findstr /v /b /c:"FFFFFFFFFFFF" /c:"ffffffffffff" /c:"000000000000" /c:"a0a1a2a3a4a5" /c:"A0A1A2A3A4A5"  Merged.txt > OneBig.dic
+:: Remove the colons below if you want to remove the Null entries.
+::findstr /v /b /c:"FFFFFFFFFFFF" /c:"ffffffffffff" /c:"000000000000" /c:"a0a1a2a3a4a5" /c:"A0A1A2A3A4A5"  Merged.txt > OneBig.dic
 
 del Merged.txt
