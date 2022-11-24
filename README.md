@@ -8,3 +8,5 @@ Bad USB & Rubber ducky script.
 Dic Merger
 is for combining multiple dictionaries.
 Specifically all the dic's created by iCopy device and combining them all into on big hefty file and removing duplicate entries.
+
+those are the main files, all others are just scripts from over the years I have made and just found usefull. 
